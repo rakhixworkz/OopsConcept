@@ -1,14 +1,17 @@
 package com.xworkz.Oops;
 
-public class BookShop {
+public class BookShopInfo {
 	String shopName;
 	String authorName;
 	int price;
 	int bAddition;
+	BookShopInfo() {
+		System.out.println("No parameter");
+	}
+	
 	public void openingTime() {
 		System.out.println("shop opened");
 	}
-	
 	public void sellingOldBooks() {
 		System.out.println("Old books selled");
 	}
@@ -19,5 +22,8 @@ public class BookShop {
 		System.out.println("shop closed");
 	}
 
+	public static void main(String[] args) {
+		BookShopInfo bookshop=new BookShopInfo();
+	}
 
 }
